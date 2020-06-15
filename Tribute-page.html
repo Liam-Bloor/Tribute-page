@@ -1,99 +1,32 @@
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+<!--Centered image test will fail unless your viewport is less than 1000px; this is due to stylistic choice-->
 
-<style>
-  
-  body{
-    color: white;
-    background-color: grey;
-    display: flex;
-    justify-content: center;
-    font-family: Raleway;
-  }
-  #container{
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-  #title{
-    background-color: darkgrey;
-    padding: 10px;
-    display: inline-block;
-  }
-   #img-div{
-    color: white;
-    font-size: 20px;
-    background-color: darkgrey;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-  }
-   #image{
-    width: 300px;
-    max-width: 100%;
-    height: auto;  
-    display: block;
-    margin: 0 auto;
-  }
-  #img-caption{
-    font-size: 15px;
-    display: inline-block;
-  }
-  #tribute-info{
-    display: inline-block;
-  }
-  #a{
-    display: inline-block;
-  }
-  #list-title{
-    display: inline-block;
-  }
-  #list{
-    background-color: darkgrey;
-    jutify-content: center;
-  }
-  #footer{
-    margin-bottom: 20px;
-    margin-top: 20px;
-    background-color: darkgrey;
-    padding: 10px;
-    display: inline-block;
-  }
-  a:hover{
-    color: white;
-  }
-  .thin-border{
-    border-color: yellow;
-    border-width: 5px;
-    border-style: solid;
-    border-radius: 15%;
-  }
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-<main>
-  <div id = "container">
-    
+<main id = main>
+  <div id = "container" class = "thin-border" style = "border-color: #8DD0FC; padding: 1%;">
+
     <h1 id = "title">Sally, The dog </h1>
-  
+
     <div id = "img-div">
-    
-      <img id = "image" class = thin-border src="https://scontent-lhr8-1.xx.fbcdn.net/v/t1.0-9/41115517_10157736044352892_7357069933399769088_n.jpg?_nc_cat=107&_nc_sid=110474&_nc_ohc=IrgmsiemvpgAX_6mwXN&_nc_ht=scontent-lhr8-1.xx&oh=0571d602012ab7d203e730f9b99be8cd&oe=5EBFCFA0">
-    
-      <p id = "img-caption" >A picture of Sally when she was 1 year old.</p>
-    
-      <p id = "tribute-info"> This tribute is to the wonderful Sally the dog, who is currently 2 years old. Sally is a cockapoo, which is a cocker spaniel and poodle mix. For more information on cockapoo breeds, click
-        <a target="_blank" href= "http://www.vetstreet.com/dogs/cockapoo"><em>this link.</em></a></p>
-    
+
+      <img id = "image" class = thin-border src="https://i.gyazo.com/2fa08bf95e1ab4b04deeafc0752a050b.jpg" alt = "An image of my dog, Sally">
+
+      <p id = "img-caption" >A picture of Sally when she was a puppy.</p>
+
+      <p id = "tribute-info" style= "width: 80%;"> This tribute is to the wonderful Sally the dog, who is currently 2 years old. Sally is a cockapoo, which is a cocker spaniel and poodle mix. For more information on cockapoo breeds, click
+        <a id = tribute-link target="_blank" href= "http://www.vetstreet.com/dogs/cockapoo"><em>this link.</em></a></p>
+    <div id = "list-div">
       <h2 id="list-title">Sally likes:</h2>
-  
+
       <ul id= "list">
         <li>Sticks</li>
         <li>Human food</li>
         <li>Barking</li>
       </ul>
-    
+      </div>
     </div>
-  
+
     <footer id="footer">
       <a href="#">Back to top</a>
     </footer>

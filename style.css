@@ -1,0 +1,101 @@
+body{
+    color: black;
+    background-image: url("https://i.gyazo.com/bb6421e1c82b80859fd694d2c9eb7a96.png");
+    background-color: #BFE5FD;
+    display: flex;
+    justify-content: center;
+    font-family: Caveat;
+  }
+  #main{
+    display: flex;
+    justify-content: center;
+  }
+  #container{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+  }
+  #title{
+    background-color: #8DD0FC;
+    padding: 1%;
+    display: inline-block;
+    font-size: 5vmax;
+    border-radius: 50px 50px 0 0;
+  }
+   #img-div{
+    color: black;
+    font-size: 3vmax;
+    background-color: #8DD0FC;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+   #image{
+    width: 60%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  #img-caption{
+    font-size: 3vmax;
+    display: inline-block;
+  }
+
+  #list{
+    background-color: #8DD0FC;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 20vmax;
+    margin-left: 0%;
+  }
+  #footer{
+    margin-bottom: 2%;
+    margin-top: 6%;
+    background-color: #8DD0FC;
+    padding: 2%;
+    display: inline-block;
+    border-radius: 0 0 50px 50px;
+    font-size: 3vmax;
+  }
+  a:hover{
+    color: white;
+  }
+  .thin-border{
+    border-color: #BFE5FD;
+    border-style: dashed;
+    border-width: 10px;
+    padding: 1%;
+    border-radius: 50px;
+  }
+
+@media (min-width: 1000px){
+  #img-div{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+      "image list"
+      "caption caption"
+      "info info";
+  }
+  #image{
+    width: 80%;
+    grid-area: image;
+  }
+   #list{
+    grid-area: list;
+    margin-left: 30%;
+  }
+  #img-caption{
+    text-align: start;
+    grid-area: caption;
+    margin-left: 5%;
+  }
+  #tribute-info{
+    grid-area: info;
+    margin-left: 10%;
+  }
+}
